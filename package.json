@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server/index.js",
     "dev": "node server/index.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "build": "echo 'No build step required for Node.js server'",
+    "test": "echo \"No tests specified\" && exit 0",
+    "postinstall": "echo 'Dependencies installed successfully'"
   },
   "dependencies": {
     "@aws-sdk/client-bedrock-runtime": "^3.914.0",

@@ -1,5 +1,5 @@
 // server/insightsRepo.ts
-import type { NextApiRequest } from "next";
+// Express server - no Next.js imports needed
 
 export type Modality =
   | "visual"

@@ -641,7 +641,7 @@ class MCP {
       // Import supabase client
       const { createClient } = require("@supabase/supabase-js");
       const supabaseUrl = process.env.SUPABASE_URL;
-      const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+      const supabaseKey = process.env.SUPABASE_SERVICE_ROLE;
       const supabase = createClient(supabaseUrl, supabaseKey);
 
       // Store or update learning style in database
@@ -678,7 +678,7 @@ class MCP {
       // Import supabase client
       const { createClient } = require("@supabase/supabase-js");
       const supabaseUrl = process.env.SUPABASE_URL;
-      const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+      const supabaseKey = process.env.SUPABASE_SERVICE_ROLE;
       const supabase = createClient(supabaseUrl, supabaseKey);
 
       // Get student learning style from database with join to estilos_aprendizaje
@@ -717,7 +717,7 @@ class MCP {
       // Import supabase client
       const { createClient } = require("@supabase/supabase-js");
       const supabaseUrl = process.env.SUPABASE_URL;
-      const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+      const supabaseKey = process.env.SUPABASE_SERVICE_ROLE;
       const supabase = createClient(supabaseUrl, supabaseKey);
 
       // Get estilo ID by name
