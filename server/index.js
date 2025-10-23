@@ -28,7 +28,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // Serve static files from dist directory (Vite build output)
-app.use(express.static(path.join(__dirname, "../dist")));
+// app.use(express.static(path.join(__dirname, "../dist"))); // Commented out - no frontend dist folder
 
 // Middleware
 app.use(cors());
@@ -1308,9 +1308,9 @@ app.get("/api/progress-metrics/:sessionId", async (req, res) => {
 });
 
 // Catch-all handler: send back React's index.html file for any non-API routes
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../dist/index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../dist/index.html"));
+// }); // Commented out - no frontend to serve
 
 app.listen(PORT, () => {
   console.log(`🚀 MentorIA server running on http://localhost:${PORT}`);
