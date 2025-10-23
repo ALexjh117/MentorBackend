@@ -1,0 +1,23 @@
+{
+  "name": "mentoria-backend",
+  "version": "1.0.0",
+  "description": "Backend de MentorIA - API con agentes de IA",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.914.0",
+    "@supabase/supabase-js": "^2.76.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "undici": "^6.22.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
